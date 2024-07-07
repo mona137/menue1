@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        p{
+            
+        padding-right:0px;
+        background-color:#050000;
+        width:100%;
+        padding:20px;
+        font-size: 20px;
+        direction: rtl;
+        
+        
+        }
+        p a{
+            text-decoration: none;
+            color:#ffffff;
+            padding:20px;
+
+
+        }
+        p a:hover{
+            background-color: #575857;
+            color:white;
+            
+        }
+ 
+
+    </style>
+
+</head>
+<body>
+    
+ 
+  
+    <p id="demo"></p>
+    <script>
+               const x = [
+          {
+            nav: "صفحه اصلی",
+            url: "https://digikala.com",
+            
+          },
+          {
+           nav: "درباره ما",
+            url: "https://mci.ir",
+            
+          },
+          {
+            nav: "ارتباط با ما ",
+            url: "https://w3schools.com",
+            
+          },
+          {
+           nav: "تماس با ما ",
+            url: "https://irancell.ir",
+           
+          },
+       
+        ];
+        
+        function getlink() {
+            debugger;
+            let text="";
+            for(let i=0;i<x.length;i++){
+                text += "<a  href='" + x[i].url+"'> " +  x[i].nav +" "+   "</a>";
+            }
+            return text;
+        }
+        document.getElementById("demo").innerHTML = getlink();
+    </script>
+</body>
+</html>
